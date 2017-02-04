@@ -1,0 +1,30 @@
+
+body {
+  font: 15px/1.5 "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+
+.common-message {
+    font-size: 120%;
+}
+
+.common-message p {
+    margin: 20px;
+    padding: 0 20px;
+}
+
+.common-message .ok-message {
+    border: 2px solid green;
+}
+
+.common-message .error-summary {
+    border: 2px solid red;
+}
+
+form p {
+	border-bottom: 1px #00a solid;
+	border-right: 1px #00a dotted;
+	margin-bottom: 2px;
+	padding: 2px 4px;
+	height: 26px;
+	width: 100%;
+}

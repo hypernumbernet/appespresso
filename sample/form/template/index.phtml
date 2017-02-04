@@ -1,0 +1,122 @@
+<div class="container_12">
+	<div class="grid_12">
+		<h2>Form Sample - Ae Framework</h2>
+	</div>
+	<div class="grid_12 common-message"><?= $err ?><?= $ok ?></div>
+	<div class="clear" style="height: 10px;"></div>
+	<div class="grid_2">Page Token: </div>
+	<div class="grid_10"><?= $token ?></div>
+	<div class="clear"></div>
+	<div class="grid_2">Page Token Valid: </div>
+	<div class="grid_10"><?= $token_valid ?></div>
+	<div class="clear"></div>
+	<div class="grid_2">Cookie Token: </div>
+	<div class="grid_10"><?= filter_input(INPUT_COOKIE, $token_key) ?></div>
+	<div class="clear" style="height: 10px;"></div>
+	<form method="post" action="" name="fm">
+		<input type="hidden" name="token" value="<?= $token ?>">
+		<div class="grid_2">
+			<p>お申込日</p>
+		</div>
+		<div class="grid_10">
+			<p><?= $created1 ?>年<?= $created2 ?>月<?= $created3 ?>日</p>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_2">
+			<p>お申込者名</p>
+		</div>
+		<div class="grid_10">
+			<p><?= $name1k ?></p>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_2">
+			<p>お申込者フリガナ</p>
+		</div>
+		<div class="grid_10">
+			<p><?= $name1h ?></p>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_2">
+			<p>電話番号</p>
+		</div>
+		<div class="grid_10">
+			<p><?= $tel1 ?> - <?= $tel2 ?> - <?= $tel3 ?></p>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_2">
+			<p>性別</p>
+		</div>
+		<div class="grid_10">
+			<p><?= $gender ?></p>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_2">
+			<p>メールマガジン購読</p>
+		</div>
+		<div class="grid_10">
+			<p><?= $mailmag ?></p>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_2">
+			<p>パスワード</p>
+		</div>
+		<div class="grid_10">
+			<p><?= $pass1 ?></p>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_2">
+			<p>パスワード確認入力</p>
+		</div>
+		<div class="grid_10">
+			<p><?= $pass2 ?></p>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_2">
+			<p>ご年齢</p>
+		</div>
+		<div class="grid_10">
+			<p><?= $age ?></p>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_2">
+			<p>メールアドレス</p>
+		</div>
+		<div class="grid_10">
+			<p><?= $email ?></p>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_2">
+			<p>ホームページ</p>
+		</div>
+		<div class="grid_10">
+			<p><?= $homepage ?></p>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_2">
+			<p>興味のある分野</p>
+		</div>
+		<div class="grid_10">
+			<p><?= $interest ?></p>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_2">
+			<p>好きな料理(複数可)</p>
+		</div>
+		<div class="grid_10">
+            <div style="padding:5px;"><?= $foods ?></div>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_2">
+			<p>ご要望</p>
+		</div>
+		<div class="grid_10">
+			<?= $request ?>
+		</div>
+		<div class="clear" style="height: 20px;"></div>
+		<div class="grid_8 prefix_4">
+			<input onclick="document.forms['fm'].submit();" type="button" value="送信">
+		</div>
+		<div class="clear" style="height: 50px;"></div>
+	</form>
+	<div class="clear" style="height: 50px;"></div>
+</div>

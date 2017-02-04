@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit>
+    <php>
+        <var name="DB_ADAPTER" value="PdoMysql" />
+        <var name="DB_NAME" value="test" />
+        <var name="DB_USER" value="test" />
+        <var name="DB_PASS" value="test" />
+    </php>
+</phpunit>
